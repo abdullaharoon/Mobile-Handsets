@@ -1,0 +1,27 @@
+
+<h4>ADD HANDSETS</h4>
+<div class="grid grid-pad">
+
+<form [formGroup]="imageFile" (ngSubmit)="uploadImage(imageFile.value)">
+<ul class="form-style-1">
+
+ <li><label> Handset Name:<span class="required">*</span> </label>
+  <input type="text" [formControl]="imageFile.controls['name']">
+</li>
+
+<li><label> Description:<span class="required">*</span> </label>
+  <textarea rows="4" cols="50" [formControl]="imageFile.controls['description']"></textarea>
+</li>
+
+<li>  <label>Image Upload: </label>
+  <input type="file" id="imgFile">
+  </li>
+  <li>
+  <input  class="button" type="submit" value="Upload">
+  </li>
+ </ul> 
+</form>
+
+
+
+</div>

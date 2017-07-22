@@ -1,0 +1,27 @@
+
+<h4>Handset Details</h4>
+Search <input class="input" #searchBox id="search-box" placeholder="Enter phone name" (keyup)="search(searchBox.value)" />
+<div class="grid grid-pad">
+
+
+<!--renderList-->
+<div *ngFor="let renderLst of renderList;let i = index" class="row-1-1">
+
+    <table border=2>
+      <tr>  <th colspan="2"><img class="hicon" src={{renderLst.image}}></th></tr>
+		
+ 
+   <tr><td>Name</td> <td> {{renderLst.name}}</td></tr>
+    <tr><td>Description</td> <td> {{renderLst.description}}</td></tr>
+	
+   </table>
+   
+   
+ 
+
+  </div>  
+
+
+
+
+</div>

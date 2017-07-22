@@ -1,0 +1,24 @@
+
+<h4>Manage Handsets</h4>
+<div class="grid grid-pad">
+
+
+<!--renderList-->
+<div *ngFor="let renderLst of renderList;let i = index" class="row-1-1">
+ 
+    <table border=2><tr>
+        <th rowspan="2"><img class="hicon" src={{renderLst.image}}></th>
+    <th style="width:20%">ID</th> <th style="width:50%"> {{renderLst.id}}</th>
+    <tr><th style="width:20%" >NAME</th> <th style="width:50%"> <input #name placeholder="{{renderLst.name}}"></th></tr>
+   </table>
+   
+    <button class="button" (click)="onDelete(renderList,i)">Delete</button>
+    <button class="button" (click)="onEdit(renderList,i,name.value)">Update</button>
+ 
+
+  </div>  
+
+
+
+
+</div>

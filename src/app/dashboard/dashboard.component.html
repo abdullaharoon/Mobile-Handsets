@@ -1,0 +1,14 @@
+<h3>LATEST HANDSETS</h3>
+<div class="grid grid-pad">
+
+<div *ngFor="let renderLst of renderList;let i = index" class="col-1-4" (click)="gotoDetail(renderLst.id)" >
+ <div class="module">
+  <table border=1><tr>
+        <th><img class="hicon" src={{renderLst.image}}></th></tr>
+     <tr><th>{{renderLst.name}}</th> </tr>
+    
+  </table>
+  </div>
+</div>
+</div>
+
